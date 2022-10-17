@@ -1,0 +1,2 @@
+npm i --save-dev lite-server
+tsc index.tsc -w
