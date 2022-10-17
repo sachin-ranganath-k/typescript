@@ -1,7 +1,15 @@
-function addition(n1, n2) {
-    return n1 + n2;
+function add(n1, n2, showResult, phrase) {
+    var result = n1 + n2;
+    if (showResult) {
+        console.log(phrase + result);
+    }
+    else {
+        return result;
+    }
 }
-var number1 = 3110;
-var number2 = 100;
-var result = addition(number1, number2);
-console.log(result);
+var number1;
+number1 = 5;
+var number2 = 4.6;
+var showResult = true;
+var resultPhrase = 'Result is: ';
+add(number1, number2, showResult, resultPhrase);

@@ -1,9 +1,17 @@
-function addition(n1: number,n2:number){
-    return n1+n2;
+function add(n1: number, n2: number, showResult: boolean, phrase: string) {
+    const result = n1 + n2;
+    if (showResult) {
+        console.log(phrase + result);
+    }
+    else {
+        return result;
+    }
 }
 
-const number1=3110;
-const number2=100;
+let number1: number;
+number1 = 5;
+const number2 = 4.6;
+const showResult = true;
+let resultPhrase = 'Result is: ';
 
-const result=addition(number1,number2);
-console.log(result);
+add(number1, number2, showResult, resultPhrase);
